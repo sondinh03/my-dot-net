@@ -11,14 +11,14 @@ using System.Windows.Forms;
 
 namespace DoiBanThan
 {
-    public partial class frmAddTheLoai : Form
+    public partial class frmThemTheLoai : Form
     {
-        public frmAddTheLoai()
+        public frmThemTheLoai()
         {
             InitializeComponent();
         }
 
-        public string maTL = "";
+        public String maTL = "";
 
         private void button2_Click(object sender, EventArgs e)
         {

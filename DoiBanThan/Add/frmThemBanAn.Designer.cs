@@ -1,6 +1,6 @@
 ﻿namespace DoiBanThan
 {
-    partial class frmBanAn
+    partial class frmThemBanAn
     {
         /// <summary>
         /// Required designer variable.
@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
-            this.txtBanAn = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.btnLuuBanAn = new System.Windows.Forms.Button();
             this.btnHuyBanAn = new System.Windows.Forms.Button();
+            this.btnLuuBanAn = new System.Windows.Forms.Button();
+            this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtTenBanAn = new System.Windows.Forms.TextBox();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.guna2Panel2.SuspendLayout();
@@ -54,6 +54,16 @@
             this.guna2Panel1.Size = new System.Drawing.Size(367, 90);
             this.guna2Panel1.TabIndex = 0;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(129, 28);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(124, 38);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Bàn Ăn";
+            // 
             // guna2PictureBox1
             // 
             this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
@@ -67,16 +77,6 @@
             this.guna2PictureBox1.TabStop = false;
             this.guna2PictureBox1.UseTransparentBackground = true;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(129, 28);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(129, 39);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Bàn Ăn";
-            // 
             // guna2Panel2
             // 
             this.guna2Panel2.BackColor = System.Drawing.Color.Gainsboro;
@@ -86,43 +86,7 @@
             this.guna2Panel2.Location = new System.Drawing.Point(0, 279);
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.Size = new System.Drawing.Size(367, 79);
-            this.guna2Panel2.TabIndex = 1;
-            // 
-            // guna2Panel3
-            // 
-            this.guna2Panel3.Controls.Add(this.label2);
-            this.guna2Panel3.Controls.Add(this.txtBanAn);
-            this.guna2Panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2Panel3.Location = new System.Drawing.Point(0, 90);
-            this.guna2Panel3.Name = "guna2Panel3";
-            this.guna2Panel3.Size = new System.Drawing.Size(367, 189);
-            this.guna2Panel3.TabIndex = 2;
-            // 
-            // txtBanAn
-            // 
-            this.txtBanAn.Location = new System.Drawing.Point(40, 92);
-            this.txtBanAn.Name = "txtBanAn";
-            this.txtBanAn.Size = new System.Drawing.Size(241, 22);
-            this.txtBanAn.TabIndex = 0;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(35, 45);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(117, 25);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Tên Bàn Ăn";
-            // 
-            // btnLuuBanAn
-            // 
-            this.btnLuuBanAn.Location = new System.Drawing.Point(40, 21);
-            this.btnLuuBanAn.Name = "btnLuuBanAn";
-            this.btnLuuBanAn.Size = new System.Drawing.Size(83, 29);
-            this.btnLuuBanAn.TabIndex = 0;
-            this.btnLuuBanAn.Text = "Lưu";
-            this.btnLuuBanAn.UseVisualStyleBackColor = true;
+            this.guna2Panel2.TabIndex = 2;
             // 
             // btnHuyBanAn
             // 
@@ -134,7 +98,44 @@
             this.btnHuyBanAn.UseVisualStyleBackColor = true;
             this.btnHuyBanAn.Click += new System.EventHandler(this.btnHuyBanAn_Click);
             // 
-            // frmBanAn
+            // btnLuuBanAn
+            // 
+            this.btnLuuBanAn.Location = new System.Drawing.Point(40, 21);
+            this.btnLuuBanAn.Name = "btnLuuBanAn";
+            this.btnLuuBanAn.Size = new System.Drawing.Size(83, 29);
+            this.btnLuuBanAn.TabIndex = 0;
+            this.btnLuuBanAn.Text = "Lưu";
+            this.btnLuuBanAn.UseVisualStyleBackColor = true;
+            this.btnLuuBanAn.Click += new System.EventHandler(this.btnLuuBanAn_Click);
+            // 
+            // guna2Panel3
+            // 
+            this.guna2Panel3.Controls.Add(this.label2);
+            this.guna2Panel3.Controls.Add(this.txtTenBanAn);
+            this.guna2Panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.guna2Panel3.Location = new System.Drawing.Point(0, 90);
+            this.guna2Panel3.Name = "guna2Panel3";
+            this.guna2Panel3.Size = new System.Drawing.Size(367, 189);
+            this.guna2Panel3.TabIndex = 1;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(35, 45);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(117, 25);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Tên Bàn Ăn";
+            // 
+            // txtTenBanAn
+            // 
+            this.txtTenBanAn.Location = new System.Drawing.Point(40, 92);
+            this.txtTenBanAn.Name = "txtTenBanAn";
+            this.txtTenBanAn.Size = new System.Drawing.Size(241, 22);
+            this.txtTenBanAn.TabIndex = 0;
+            // 
+            // frmThemBanAn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -144,7 +145,7 @@
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.guna2Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "frmBanAn";
+            this.Name = "frmThemBanAn";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmBanAn";
             this.guna2Panel1.ResumeLayout(false);
@@ -165,8 +166,8 @@
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtBanAn;
         private System.Windows.Forms.Button btnLuuBanAn;
         private System.Windows.Forms.Button btnHuyBanAn;
+        public System.Windows.Forms.TextBox txtTenBanAn;
     }
 }

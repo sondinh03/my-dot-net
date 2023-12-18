@@ -75,7 +75,7 @@ namespace DoiBanThan
 
         private void btnThemBan_Click(object sender, EventArgs e)
         {
-            frmBanAn f = new frmBanAn();
+            frmThemBanAn f = new frmThemBanAn();
             f.ShowDialog();
             this.Show();
         }
@@ -104,6 +104,11 @@ namespace DoiBanThan
             this.Show();
         }
 
+        private void tabBanAn_Enter(object sender, EventArgs e)
+        {
+            AddControls(pnlBanAn, new frmBanAn());
+        }
+
         private void tabTheLoai_Enter(object sender, EventArgs e)
         {
             AddControls(pnlTheLoai, new frmTheLoai());
@@ -118,5 +123,7 @@ namespace DoiBanThan
         {
             AddControls(pnlCaiDat, new frmCaiDat());
         }
+
+
     }
 }

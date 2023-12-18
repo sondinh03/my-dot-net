@@ -21,17 +21,11 @@ namespace DoiBanThan.View
         public void GetData()
         {
             string qry = "select * from tblTheLoai where tenTheLoai like '%" + txtTimKiemTheLoai.Text + "%'";
-            //string qry = "select * from tblTheLoai";
             ListBox lb = new ListBox();
             lb.Items.Add(dgvMaTheLoai);
             lb.Items.Add(dgvTenTheLoai);
 
             MainClass.LoadData(qry, grvTheLoai, lb);
-        }
-
-        private void grvTheLoai_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
         }
 
         private void frmTheLoai_Load(object sender, EventArgs e)
@@ -41,7 +35,7 @@ namespace DoiBanThan.View
 
         private void btnThemTheLoai_Click(object sender, EventArgs e)
         {
-            frmAddTheLoai frm = new frmAddTheLoai();
+            frmThemTheLoai frm = new frmThemTheLoai();
             frm.ShowDialog();
             GetData();
         }
@@ -55,7 +49,7 @@ namespace DoiBanThan.View
         {
             if(grvTheLoai.CurrentCell.OwningColumn.Name == "dgvEdit")
             {
-                frmAddTheLoai frm = new frmAddTheLoai();
+                frmThemTheLoai frm = new frmThemTheLoai();
                 frm.maTL = Convert.ToString(grvTheLoai.CurrentRow.Cells["dgvMaTheLoai"].Value);
                 frm.txtTenTheLoai.Text = Convert.ToString(grvTheLoai.CurrentRow.Cells["dgvTenTheLoai"].Value);
                 frm.ShowDialog();
@@ -75,11 +69,6 @@ namespace DoiBanThan.View
                 }
                 
             } 
-        }
-
-        private void guna2GradientPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }

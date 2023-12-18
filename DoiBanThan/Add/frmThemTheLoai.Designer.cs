@@ -1,6 +1,6 @@
 ﻿namespace DoiBanThan
 {
-    partial class frmAddTheLoai
+    partial class frmThemTheLoai
     {
         /// <summary>
         /// Required designer variable.
@@ -62,7 +62,7 @@
             this.label1.Location = new System.Drawing.Point(101, 21);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(151, 45);
-            this.label1.TabIndex = 1;
+            this.label1.TabIndex = 0;
             this.label1.Text = " Thể Loại";
             // 
             // guna2PictureBox1
@@ -87,7 +87,7 @@
             this.guna2Panel2.Location = new System.Drawing.Point(0, 231);
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.Size = new System.Drawing.Size(308, 79);
-            this.guna2Panel2.TabIndex = 1;
+            this.guna2Panel2.TabIndex = 2;
             // 
             // btnHuy
             // 
@@ -101,7 +101,7 @@
             // 
             // btnLuuTheLoai
             // 
-            this.btnLuuTheLoai.Location = new System.Drawing.Point(43, 26);
+            this.btnLuuTheLoai.Location = new System.Drawing.Point(39, 26);
             this.btnLuuTheLoai.Name = "btnLuuTheLoai";
             this.btnLuuTheLoai.Size = new System.Drawing.Size(83, 29);
             this.btnLuuTheLoai.TabIndex = 0;
@@ -117,7 +117,7 @@
             this.guna2Panel3.Location = new System.Drawing.Point(0, 90);
             this.guna2Panel3.Name = "guna2Panel3";
             this.guna2Panel3.Size = new System.Drawing.Size(308, 141);
-            this.guna2Panel3.TabIndex = 2;
+            this.guna2Panel3.TabIndex = 1;
             // 
             // label2
             // 
@@ -136,7 +136,7 @@
             this.txtTenTheLoai.Size = new System.Drawing.Size(263, 27);
             this.txtTenTheLoai.TabIndex = 0;
             // 
-            // frmAddTheLoai
+            // frmThemTheLoai
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -147,7 +147,7 @@
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.Name = "frmAddTheLoai";
+            this.Name = "frmThemTheLoai";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "fThemTL";
             this.guna2Panel1.ResumeLayout(false);

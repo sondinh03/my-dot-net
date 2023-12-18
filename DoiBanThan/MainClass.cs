@@ -86,6 +86,8 @@ namespace DoiBanThan
 
         public static void LoadData(string qry, DataGridView gv, ListBox lb)
         {
+            gv.CellFormatting += new DataGridViewCellFormattingEventHandler(gv_CellFormatting);
+
             try
             {
                 SqlCommand sqlCmd = new SqlCommand (qry, sqlCon);
@@ -109,5 +111,16 @@ namespace DoiBanThan
             }
         }
 
+        private static void gv_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        {
+            Guna.UI2.WinForms.Guna2DataGridView gv = (Guna.UI2.WinForms.Guna2DataGridView)sender;
+            int count = 0;
+
+            foreach(DataGridViewRow row in gv.Rows)
+            {
+                count++;
+                row.Cells[0].Value = count;
+            }
+        }
     }
 }
